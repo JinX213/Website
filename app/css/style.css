@@ -1,7 +1,7 @@
 .jumbotron {
-	width:100%; 
-	text-align:left; 
-	padding-bottom:50px; 
+	width:100%;
+	text-align:left;
+	padding-bottom:50px;
 	margin:0;}
 
 p {
@@ -20,15 +20,15 @@ p {
 	border-color: #8A8A8A;
 	border-style: dotted;
 	box-sizing: border-box;
-	padding:5px 15px; 
-	width:100%; 
-	text-align:justify; 
+	padding:5px 15px;
+	width:100%;
+	text-align:justify;
 	border-radius: 5px;
 }
 
 .img-circle {
 	border: 2px solid #c7b89e;
-	
+
 }
 
 .rechts {
@@ -69,3 +69,35 @@ p {
 #feedback-content {
 	width: 80%;
 }
+
+
+/**
+ * Feedback Nehmen
+ **/
+
+#fn-aufgabe2 textarea {
+  width: 100%;
+  height: 400px;
+  font-size: 1.4em;
+}
+
+#fn-aufgabe2-worked-example {
+  display: none;
+}
+
+#fn-aufgabe2-worked-example p {
+  font-size: 1.4em;
+}
+
+#fn-aufgabe2 button {
+  margin-top: 30px;
+  width: 80%;
+  height: 60px;
+  font-size: 2em;
+}
+
+#fn-aufgabe2-button-div {
+  text-align: center;
+}
+
+
