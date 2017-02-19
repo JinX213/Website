@@ -1,15 +1,9 @@
-﻿<<<<<<< HEAD
 ﻿.jumbotron {
-	width:100%; 
-	text-align:left; 
-	padding-bottom:50px; 
-=======
-.jumbotron {
 	width:100%;
 	text-align:left;
 	padding-bottom:50px;
->>>>>>> origin/master
-	margin:0;}
+	margin:0;
+}
 
 p {
     display: block;
