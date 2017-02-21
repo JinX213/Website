@@ -1,4 +1,8 @@
-﻿.jumbotron {
+* {
+   outline: 0;
+}
+
+.jumbotron {
 	width:100%;
 	text-align:left;
 	padding-bottom:50px;
@@ -21,14 +25,32 @@ p {
 	border-color: #8A8A8A;
 	border-style: dotted;
 	box-sizing: border-box;
-	padding:5px 15px;
-	width:100%;
+	padding:10px 15px;
 	text-align:justify;
 	border-radius: 5px;
+	font-size: 17.5px;
+}
+
+ol.dotted {
+	padding:10px 30px;
+}
+
+main p {
+	float: left;
+  width: calc(100% - 230px);
 }
 
 .img-circle {
 	border: 2px solid #c7b89e;
+	
+}
+@media (max-width:767px) {
+	.img-circle {
+		width:100px;
+	}
+	main p {
+    width: calc(100% - 180px);
+}
 }
 
 .rechts {
@@ -46,7 +68,28 @@ p {
     	height: auto;
 }
 
-/* ODER Trennlinie */
+
+/* Abstand vom unteren Bildschirmrand*/
+.content {
+	margin-bottom: 20px;
+}
+
+/* Navigation anpassen*/
+.navbar-brand {padding: 0px 15px;}
+.navbar-brand:last-child {padding: 5px 5px;}
+.content_wrapper {margin-top:50px;} /* Inhalt unterhalb der Navbar positionieren */
+
+/* Abstände für Buttons */
+.btn {margin: 20px 0;}
+
+/* Größenanpassung für Textareas */
+textarea {
+	min-height: 100px; 
+	max-height:800px; 
+	min-width:100%;
+	max-width:100%;
+	padding: 5px;
+}
 
 /* row-divided fuer die vertikale/horizontale Trennlinie im Grid*/
 	.row-divided > div[class*="divider-"]:before, .row-divided > div[class*="divider-"]:after {
@@ -129,13 +172,12 @@ p {
 			padding-right: 40px;
 		}
 	}
-	/* ENDE Oder Trennlinie*/
 
-/* Funktioniert noch nicht*/
-body .container{
-	margin-bottom: 20px;
+
+.best-practice p {
+	border: solid 1px green;
+	padding: 5px;
 }
-
 
 /**
  * Feedbackseite
