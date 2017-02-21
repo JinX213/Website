@@ -46,10 +46,94 @@ p {
     	height: auto;
 }
 
+/* ODER Trennlinie */
+
+/* row-divided fuer die vertikale/horizontale Trennlinie im Grid*/
+	.row-divided > div[class*="divider-"]:before, .row-divided > div[class*="divider-"]:after {
+		background-color: rgba(34,36,38,.15);
+		content: '';
+		display: inline-block;
+		height: 2px;
+		position: relative;
+		vertical-align: middle;
+		width: calc(50% - 1rem);
+	}
+	.row-divided > div[class*="divider-"]:before {
+		right: 0.5em;
+		margin-left: -50%;
+	}
+	.row-divided > div[class*="divider-"]:after {
+		left: 0.5em;
+		margin-right: -50%;
+	}
+	.row-divided > div[class*="divider-"] {
+		text-align:center;
+		margin: 20px 50px;
+		text-transform: uppercase;
+	}
+
+	/* divider-md */
+	@media (min-width:992px) {
+		.row-divided .divider-md {
+			margin: 0 !important;
+			position: absolute;
+			z-index: 10; 
+			top: 50%; 
+			left: 50%; 
+			margin: 0; 
+			padding: 0; 
+			width: auto; 
+			height: 50%; 
+			line-height: 0; 
+			text-align:center; 
+			text-transform: uppercase; 
+			transform: translateX(-50%);
+		}
+
+		.row-divided .divider-md:before, .row-divided .divider-md:after {
+			background-color: transparent !important;
+			display: inherit !important;
+			display: inline-block !important;
+			height: calc(100% - 1.5rem) !important;
+			position: absolute !important;
+			width: 0 !important;
+			left: 50% !important;
+			content: '';
+			z-index: 9;
+			border-left: 2px solid rgba(34,36,38,.15);
+			border-right: 2px solid rgba(255,255,255,.1);
+		}
+		
+		.row-divided .divider-md {
+			height: calc(50% - 1rem);
+			min-height: 50px;
+		}
+
+		.row-divided .divider-md:before {
+			top: -100%;
+			margin-left: unset !important;
+		}
+
+		.row-divided .divider-md:after {
+			top: auto;
+			bottom: 0;
+			margin-right: unset !important;
+		}
+		
+		.row-divided {
+			position:relative;
+		}
+
+		.row-divided > div[class*="col-"] {
+			padding-left: 40px; 
+			padding-right: 40px;
+		}
+	}
+	/* ENDE Oder Trennlinie*/
 
 /* Funktioniert noch nicht*/
-.bottom {
-	margin-bottom: 15px;
+body .container{
+	margin-bottom: 20px;
 }
 
 

@@ -23,3 +23,11 @@ $(function() {
     });
 
 });
+
+
+
+
+
+$(document).ready(function() {
+    $("#website_content_wrapper").load("./pages/home.html");
+});
