@@ -1,6 +1,7 @@
 <?php
   require('functions.php');
   //ftp://wp383.webpack.hosteurope.de/
+  //https://webcenter.hosteurope.de
   //User: ftp12301050-feedback
   //Password: MFzE2017
 ?>
