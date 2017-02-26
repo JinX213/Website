@@ -45,12 +45,8 @@ main p {
 	
 }
 @media (max-width:767px) {
-	.img-circle {
-		width:100px;
-	}
-	main p {
-    width: calc(100% - 180px);
-}
+	.img-circle {display: none;}
+	main p {width: 100%;}
 }
 
 .rechts {
