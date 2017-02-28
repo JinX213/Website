@@ -1,3 +1,6 @@
+
+<!-- php haben wir ebenfalls mit unserem Freund besprochen (hatten Schwierigkeiten mit Python & er hat uns angeboten seinen Server zu nutzen, wenn wir php ausprobieren möchten!-->
+
 <?php
   require('functions.php');
   //ftp://wp383.webpack.hosteurope.de/

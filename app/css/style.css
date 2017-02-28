@@ -44,6 +44,8 @@ main p {
 	border: 2px solid #c7b89e;
 	
 }
+
+<!-- Kommentar: hier haben wir Unterstützung bekommen, da das Bild beim Handyformat alles verzogen hat, wir es aber beibehalten wollten bei großen Bildschirmgrößen -->
 @media (max-width:767px) {
 	.img-circle {display: none;}
 	main p {width: 100%;}
@@ -86,7 +88,7 @@ textarea {
 	max-width:100%;
 	padding: 5px;
 }
-
+<!-- Kommentar: hier haben wir für die Trennlinien auf der Startseite Unterstützung bekommen. -->
 /* row-divided fuer die vertikale/horizontale Trennlinie im Grid*/
 	.row-divided > div[class*="divider-"]:before, .row-divided > div[class*="divider-"]:after {
 		background-color: rgba(34,36,38,.15);
